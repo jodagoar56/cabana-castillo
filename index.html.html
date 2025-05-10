@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Cabaña Castillo House Club! - Tu Paraíso Vacacional</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #0056b3; /* Azul más sólido para el header */
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: #ffc107 5px solid; /* Amarillo para el borde */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #f0f0f0;
+            margin-top: 5px;
+        }
+        .main-promo {
+            text-align: center;
+            padding: 30px 20px;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .main-promo h2 {
+            color: #0056b3;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .main-promo .lead {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #fff; /* Fondo blanco para la galería */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .gallery img {
+            width: 100%;
+            height: 220px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid #fff; /* Borde blanco sutil */
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+        .gallery-title {
+            text-align: center;
+            font-size: 1.8em;
+            color: #0056b3;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .amenities {
+            background: #fff;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .amenities h3 {
+            text-align: center;
+            color: #0056b3;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+        .amenities ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .amenities li {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #007bff;
+            font-size: 1.05em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .amenities li strong {
+            color: #333;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: #007bff;
+            color: #fff;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .cta-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ffc107; 
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+        }
+        .whatsapp-contact {
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .main-promo h2, .cta-section h2 {
+                font-size: 1.8em;
+            }
+            .main-promo .lead, .cta-section p {
+                font-size: 1.1em;
+            }
+            .amenities ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🌴☀️ ¡Escápate a la Cabaña Castillo House Club! ☀️🌴</h1>
+            <p>Tu Destino Perfecto para el Descanso y la Diversión en Familia o con Amigos</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main-promo">
+            <h2>Imagina Tus Vacaciones Soñadas... ¡Aquí Se Hacen Realidad!</h2>
+            <p class="lead">
+                ¿Buscas el lugar ideal para desconectar y crear recuerdos inolvidables? Nuestra espaciosa cabaña en
+                <strong>Castillo House Club</strong> te espera con capacidad para hasta <strong>10 personas</strong>.
+                Disfruta de un ambiente acogedor, seguro y lleno de comodidades.
+            </p>
+        </section>
+
+        <h2 class="gallery-title">📸 Explora Tu Próximo Paraíso Vacacional 📸</h2>
+        <section class="gallery">
+            <!-- Las rutas ahora apuntan a la carpeta "images" -->
+            <img src="images/image_3.jpg" alt="Sala de estar y cocina moderna">
+            <img src="images/image_1.jpg" alt="Habitación confortable con litera y cama doble">
+            <img src="images/image_2.jpg" alt="Habitación principal con cama doble">
+            <img src="images/image_5.jpg" alt="Zona de BBQ para asados inolvidables">
+            <img src="images/image_8.jpg" alt="Cancha deportiva múltiple">
+            <img src="images/image_4.jpg" alt="Parque infantil para los más pequeños">
+            <img src="images/image_13.jpg" alt="Mesas de billar para la diversión">
+            <img src="images/image_7.jpg" alt="Kiosco para relajarse al aire libre">
+            <img src="images/image_6.jpg" alt="Gimnasio al aire libre">
+            <img src="images/image_10.jpg" alt="Amplio kiosco social">
+            <img src="images/image_9.jpg" alt="Hermosos senderos y zonas verdes">
+            <img src="images/image_11.jpg" alt="Exterior de la cabaña">
+            <img src="images/image_12.jpg" alt="Exterior de la cabaña con entorno">
+        </section>
+
+        <section class="amenities">
+            <h3>🎉 Un Mundo de Comodidades y Diversión Te Espera 🎉</h3>
+            <ul>
+                <li><strong>Alojamiento Espacioso:</strong> Capacidad para hasta 10 personas.</li>
+                <li><strong>3 Habitaciones Confortables:</strong> Perfectas para el descanso.</li>
+                <li><strong>Cocina Totalmente Equipada:</strong> Lista para tus creaciones culinarias.</li>
+                <li><strong>Sala de Estar Fresquita:</strong> Con aire acondicionado para tu confort.</li>
+                <li><strong>Piscina Refrescante:</strong> ¡Sumérgete en la diversión! (Común del conjunto)</li>
+                <li><strong>Cancha Múltiple:</strong> Para partidos de microfútbol o baloncesto.</li>
+                <li><strong>Zona de BBQ:</strong> Ideal para tardes de asado con los tuyos.</li>
+                <li><strong>Mesas de Billar:</strong> Desafía a tus amigos a una partida.</li>
+                <li><strong>Kioscos y Zonas de Descanso:</strong> Relájate bajo la sombra y disfruta del entorno.</li>
+                <li><strong>Parque Infantil:</strong> Diversión garantizada para los niños con juegos y ¡hasta un avión!</li>
+                <li><strong>Gimnasio al Aire Libre:</strong> Mantente activo durante tus vacaciones.</li>
+                <li><strong>Amplias Zonas Verdes:</strong> Disfruta de la naturaleza y el aire fresco.</li>
+                <li><strong>Seguridad y Privacidad:</strong> Ubicada dentro de un conjunto cerrado.</li>
+                <li><strong>Parqueadero Privado:</strong> Comodidad para tu vehículo.</li>
+            </ul>
+        </section>
+
+        <section class="cta-section">
+            <h2>¡Tu Mejor Estadía Comienza Aquí! 🤩</h2>
+            <p>No dejes pasar la oportunidad de vivir unas vacaciones inolvidables. ¡Reserva tus fechas ahora!</p>
+            <a href="https://wa.me/573136211422?text=Hola!%20Estoy%20interesado%20en%20reservar%20la%20Cabaña%20Castillo%20House%20Club.%20Quisiera%20más%20información%20sobre%20disponibilidad%20y%20tarifas." class="cta-button" target="_blank">
+                📞 ¡Reserva por WhatsApp AHORA!
+            </a>
+            <p class="whatsapp-contact">
+                O contáctanos directamente al: <strong>313 621 1422</strong>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Cabaña Castillo House Club</p>
+            <p>&copy; 2024 - ¡Te esperamos para hacer de tus vacaciones una experiencia memorable!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
