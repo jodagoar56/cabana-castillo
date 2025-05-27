@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%; /* More responsive */
+    max-width: 960px; /* Max width for larger screens */
+    margin: 20px auto; /* Centering with margin top/bottom */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 { /* Added h3 for card titles */
+    color: #333;
+    margin-top: 0; /* Remove default top margin from headings in some contexts */
+}
+
+header h1 { /* Specific styling for header h1 from previous HTML */
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #fff; /* Assuming header has dark background */
+}
+
+
+/* Form Styling */
+#animalForm {
+    background: #fff; /* May not be needed if container is white */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px; /* Added margin below form */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); /* This was in HTML, can be here or on .container */
+}
+
+#animalForm label {
+    display: block;
+    margin-bottom: 8px; /* Spacing from HTML */
+    margin-top: 10px; /* Added for spacing between fields */
+    font-weight: bold;
+    color: #333;
+}
+
+#animalForm input[type="text"],
+#animalForm input[type="number"],
+#animalForm select {
+    width: 100%;
+    padding: 10px; /* Increased padding from HTML */
+    margin-bottom: 15px; /* Spacing from HTML */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#animalForm button[type="submit"] { /* Using attribute selector for specificity */
+    background-color: #007bff; /* Blue from HTML */
+    color: white;
+    padding: 12px 20px; /* From HTML */
+    border: none;
+    border-radius: 5px; /* From HTML */
+    cursor: pointer;
+    font-size: 1em; /* From HTML */
+    transition: background-color 0.3s ease; /* From HTML */
+    margin-top: 15px; /* Added for spacing */
+}
+
+#animalForm button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue from HTML */
+}
+
+/* Animal Cards Styling */
+#animalCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.animal-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Consistent with form/container */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow from HTML */
+    transition: box-shadow 0.3s ease; /* From HTML */
+    /* margin-bottom: 10px; /* Not needed with grid gap */
+}
+
+.animal-card:hover { /* From HTML */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.animal-card h3 {
+    color: #0056b3; /* Blue from HTML */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4em; /* From HTML */
+}
+
+.animal-card p {
+    font-size: 0.95em; /* From HTML */
+    margin-bottom: 8px; /* From HTML */
+    color: #555; /* From HTML */
+}
+
+.animal-card strong { /* From HTML */
+    color: #333;
+}
+
+.animal-card .actions { /* Container for buttons */
+    margin-top: 15px;
+    text-align: right; /* Align buttons to the right */
+}
+
+.animal-card .actions button { /* Common style for buttons in card */
+    padding: 8px 12px; /* From HTML */
+    margin-left: 8px; /* Changed from margin-right to margin-left for right alignment */
+    font-size: 0.9em; /* From HTML */
+    border-radius: 4px; /* From HTML */
+    border: none; /* Cleaner look */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.animal-card .edit-btn {
+    background-color: #ffc107; /* Yellow from HTML */
+    color: #333; /* Dark text for yellow bg */
+}
+
+.animal-card .edit-btn:hover {
+    background-color: #e0a800; /* Darker yellow from HTML */
+}
+
+.animal-card .delete-btn {
+    background-color: #dc3545; /* Red from HTML */
+    color: white;
+}
+
+.animal-card .delete-btn:hover {
+    background-color: #c82333; /* Darker red from HTML */
+}
+
+/* Visibility for produccionLecheDiv */
+/* This is just a fallback, as inline style 'display: none;' is already applied in HTML/JS */
+#produccionLecheDiv.hidden-by-default { 
+    display: none;
+}
+
+/* Footer styling from HTML, if needed */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Header styling from HTML, if needed */
+header { /* This was defined in index.html's <style> tag, moving relevant parts here */
+    background: #0056b3; 
+    color: #fff;
+    padding: 1rem 1rem; 
+    text-align: center;
+    border-bottom: #ffc107 5px solid;
+}
